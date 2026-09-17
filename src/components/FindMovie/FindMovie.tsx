@@ -87,7 +87,7 @@ export const FindMovie: React.FC<Props> = ({ onAdd }) => {
               className={cn('button is-light', { 'is-loading': isLoading })}
               disabled={!query}
             >
-              Find a movie
+              {!preview ? 'Find a movie' : 'Search again'}
             </button>
           </div>
 
